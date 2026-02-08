@@ -241,7 +241,6 @@ function buildOutlines(input: {
       outerHeight,
       outerRadius,
       innerWidth,
-      innerHeight,
       notchSize,
       notchInterval,
       notchCornerRadius,

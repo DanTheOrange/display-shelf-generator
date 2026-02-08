@@ -589,11 +589,7 @@ function ShelfModel({
               position={[xOffset, 0, layerIndex * thickness]}
             >
               <meshStandardMaterial attach="material-0" {...surfaceTextures} />
-              <meshStandardMaterial
-                attach="material-1"
-                scale
-                {...edgeTextures}
-              />
+              <meshStandardMaterial attach="material-1" {...edgeTextures} />
             </mesh>,
           );
         }
@@ -754,7 +750,6 @@ function buildNotchCutoutPath(placement: PartPlacement, outline: Outline) {
       const y = offsetY + notch.y;
       const size = notch.size;
       const rMaterial = Math.max(0, Math.min(notch.materialRadius, size / 2));
-      const rEntrance = Math.max(0, Math.min(notch.entranceRadius, size / 2));
 
       if (notch.side === "left") {
         return [
