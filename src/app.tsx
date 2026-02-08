@@ -43,7 +43,7 @@ function App() {
   const [borderThickness, setBorderThickness] = useState(30);
   const [radiusPercent, setRadiusPercent] = useState(15);
   const [toolGap, setToolGap] = useState(6);
-  const [middleCount, setMiddleCount] = useState(8);
+  const [middleCount, setMiddleCount] = useState(6);
   const [shelfCount, setShelfCount] = useState(7);
   const [notchSize, setNotchSize] = useState(8);
   const [notchInterval, setNotchInterval] = useState(20);
